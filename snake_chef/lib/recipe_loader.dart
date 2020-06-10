@@ -7,12 +7,7 @@ class RecipeLoader {
 
   static Future<void> load() async {
     await Future.wait([
-      _loadFile("BURGER"),
-      _loadFile("MUSHROOM_SOUP"),
-      _loadFile("ONION_SOUP"),
-      _loadFile("TOMATO_SOUP"),
-      _loadFile("PASTA"),
-      _loadFile("SALAD"),
+      _loadFile("CHERRY_PIE"),
     ]);
   }
 

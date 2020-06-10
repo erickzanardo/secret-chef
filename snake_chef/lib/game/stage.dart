@@ -2,7 +2,7 @@ import 'package:flame/position.dart';
 
 import '../recipe_loader.dart';
 
-enum Ingredient { TOMATO, LETTUCE, PASTA, MEAT_BALLS, BREAD, CHEESE, HAMBURGUER, ONION, MUSHROOM }
+enum Ingredient { TOMATO, LETTUCE, PASTA, MEAT_BALLS, BREAD, CHEESE, HAMBURGUER, ONION, MUSHROOM, CHERRY }
 
 enum StageDifficult { NORMAL, MEDIUM, HARD }
 
@@ -57,12 +57,7 @@ class Stage {
 }
 
 enum RecipeName {
-  SALAD,
-  PASTA,
-  BURGER,
-  ONION_SOUP,
-  MUSHROOM_SOUP,
-  TOMATO_SOUP,
+  CHERRY_PIE,
 }
 
 class Recipe {

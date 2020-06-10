@@ -22,7 +22,7 @@ class Assets {
     ingredients = await FireAtlas.fromAsset('atlases/Ingredients.fa');
     floor = SpriteSheet(imageName: "floor.png", textureHeight: 16, textureWidth: 16, columns: 1, rows: 2);
     snake = SpriteSheet(imageName: "snake.png", textureHeight: 16, textureWidth: 16, columns: 5, rows: 5);
-    plates = SpriteSheet(imageName: "plates.png", textureHeight: 32, textureWidth: 48, columns: 2, rows: 3);
+    plates = SpriteSheet(imageName: "plates.png", textureHeight: 32, textureWidth: 48, columns: 1, rows: 1);
   }
 }
 
@@ -124,18 +124,8 @@ class Snake {
 class Plates {
   static Sprite getSprite(RecipeName recipe) {
     switch (recipe) {
-      case RecipeName.SALAD:
+      case RecipeName.CHERRY_PIE:
         return Assets.plates.getSprite(0, 0);
-      case RecipeName.PASTA:
-        return Assets.plates.getSprite(1, 0);
-      case RecipeName.BURGER:
-        return Assets.plates.getSprite(2, 0);
-      case RecipeName.MUSHROOM_SOUP:
-        return Assets.plates.getSprite(0, 1);
-      case RecipeName.ONION_SOUP:
-        return Assets.plates.getSprite(1, 1);
-      case RecipeName.TOMATO_SOUP:
-        return Assets.plates.getSprite(2, 1);
     }
 
     return null;

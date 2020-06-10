@@ -2,10 +2,9 @@
   "stageNumber": 0,
   "time": 60,
   "recipes": [
-    "SALAD",
-    "SALAD",
-    "SALAD",
-    "SALAD"
+    "CHERRY_PIE",
+    "CHERRY_PIE",
+    "CHERRY_PIE"
   ],
   "obstacles": [
     {
