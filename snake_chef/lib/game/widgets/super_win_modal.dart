@@ -89,11 +89,11 @@ class SecondPanel extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Label(label: "Com você eu posso ser eu mesmo", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Label(label: "Você participa das minhas loucuras", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Label(label: "Me anima quando estou triste", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Label(label: "Cuida de mim quando não estou bem", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
         ],
     );
