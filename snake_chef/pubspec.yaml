@@ -45,6 +45,7 @@ flutter:
     - assets/images/title.png
     - assets/images/nine_box_tileset.png
     - assets/images/nine_box_white_tileset.png
+    - assets/images/cherries.png
 
     - assets/stages/0.json
     - assets/recipes/CHERRY_PIE.json
@@ -56,6 +57,7 @@ flutter:
 
     - assets/audio/ingredient_collected.wav
     - assets/audio/recipe_done.wav
+    - assets/audio/super_win.wav
 
     - assets/atlases/
 

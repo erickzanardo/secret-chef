@@ -58,7 +58,7 @@ class SettingsManager {
     isSfxEnabled = prefs.getBool("SettingsManager.isSfxEnabled") ?? true;
 
     gamePadOptions.enabled = prefs.getBool("SettingsManager.gamePadOptions.enabled") ?? true;
-    gamePadOptions.opacity = prefs.getDouble("SettingsManager.gamePadOptions.opacity") ?? 0.5;
+    gamePadOptions.opacity = prefs.getDouble("SettingsManager.gamePadOptions.opacity") ?? 0.2;
     gamePadOptions.dpadSize = prefs.getDouble("SettingsManager.gamePadOptions.dpadSize") ?? 200;
     gamePadOptions.actionButtonSize = prefs.getDouble("SettingsManager.gamePadOptions.actionButtonSize") ?? 65;
   }

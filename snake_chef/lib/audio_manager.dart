@@ -17,6 +17,8 @@ class AudioManager {
 
   static final OcarinaPlayer _recipeDone = OcarinaPlayer(asset: 'assets/audio/recipe_done.wav', loop: false);
 
+  static final OcarinaPlayer _superWin = OcarinaPlayer(asset: 'assets/audio/super_win.wav', loop: false);
+
   static Future<void> load() async {
     await Future.wait([
       _title.load(),
@@ -25,6 +27,7 @@ class AudioManager {
       _win.load(),
       _collected.load(),
       _recipeDone.load(),
+      _superWin.load(),
     ]);
   }
 
@@ -32,6 +35,7 @@ class AudioManager {
   static Future<void> gameplayMusic() => _music(_gameplay);
   static Future<void> gameoverMusic() => _music(_gameover);
   static Future<void> winMusic() => _music(_win);
+  static Future<void> superWinMusic() => _music(_superWin);
 
   static Future<void> collectSfx() => _sfx(_collected);
   static Future<void> recipeDoneSfx() => _sfx(_recipeDone);

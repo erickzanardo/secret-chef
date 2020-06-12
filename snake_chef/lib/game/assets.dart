@@ -1,3 +1,4 @@
+import 'package:flame/animation.dart';
 import 'package:flame/sprite.dart';
 import 'package:flame/spritesheet.dart';
 import 'package:flame/flame.dart';
@@ -10,6 +11,7 @@ class Assets {
   static SpriteSheet floor;
   static SpriteSheet snake;
   static SpriteSheet plates;
+  static  Animation cherries;
 
   static Future<void> load() async {
     await Flame.images.loadAll([
@@ -18,11 +20,20 @@ class Assets {
       "nine_box_tileset.png",
       "nine_box_white_tileset.png",
       "plates.png",
+      "cherries.png",
     ]);
     ingredients = await FireAtlas.fromAsset('atlases/Ingredients.fa');
     floor = SpriteSheet(imageName: "floor.png", textureHeight: 16, textureWidth: 16, columns: 1, rows: 2);
     snake = SpriteSheet(imageName: "snake.png", textureHeight: 16, textureWidth: 16, columns: 5, rows: 5);
     plates = SpriteSheet(imageName: "plates.png", textureHeight: 32, textureWidth: 48, columns: 1, rows: 1);
+    cherries = Animation.sequenced(
+        'cherries.png',
+        8,
+        textureWidth: 80,
+        textureHeight: 48,
+        stepTime: 0.2,
+        loop: true,
+    );
   }
 }
 

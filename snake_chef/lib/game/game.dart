@@ -11,6 +11,7 @@ import 'package:flame/particle.dart';
 import 'package:flame/gestures.dart';
 import 'package:snake_chef/game/assets.dart';
 import 'package:snake_chef/game/widgets/game_win.dart';
+import 'package:snake_chef/game/widgets/super_win_modal.dart';
 import 'package:snake_chef/game/widgets/pause_game.dart';
 import 'package:snake_chef/settings_manager.dart';
 
@@ -226,7 +227,7 @@ class SnakeChef extends BaseGame with HasWidgetsOverlay, HorizontalDragDetector,
             recipeIndexLabel++;
 
             stopGame();
-            AudioManager.winMusic();
+            AudioManager.superWinMusic();
             addCelebrationComponent();
             showGameWin();
             SettingsManager.stageProgress.updateStageProgress(stageDifficult, stage.stageNumber);
@@ -337,7 +338,7 @@ class SnakeChef extends BaseGame with HasWidgetsOverlay, HorizontalDragDetector,
   void showGameWin() {
     addWidgetOverlay(
       'GameWinMenu',
-      GameWin(),
+      SuperWinModal(),
     );
     addCelebrationComponent();
   }
