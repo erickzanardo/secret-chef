@@ -90,7 +90,7 @@ class SecondPanel extends StatelessWidget {
         children: [
           Label(label: "Com você eu posso ser eu mesmo", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
           SizedBox(height: 10),
-          Label(label: "Você participa da minhas loucuras", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
+          Label(label: "Você participa das minhas loucuras", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
           SizedBox(height: 10),
           Label(label: "Me anima quando estou triste", fontSize: 22, fontColor: Color(0xFFf4f4f4)),
           SizedBox(height: 10),
